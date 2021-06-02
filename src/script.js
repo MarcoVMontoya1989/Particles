@@ -141,14 +141,14 @@ const tick = () =>
     // particles.rotation.x = elapsedTime * 0.03;
     // particles.rotation.y = Math.sin(elapsedTime) * 0.03;
 
-    for (let i = 0; i < countParticles; i++) {
-        let i3 = i * 3;
-        const positionX = particlesGeometry.attributes.position.array[i3];
+    // for (let i = 0; i < countParticles; i++) {
+    //     let i3 = i * 3;
+    //     const positionX = particlesGeometry.attributes.position.array[i3];
 
-        particlesGeometry.attributes.position.array[i3 + 1] = Math.sin(elapsedTime + positionX);
-    }
+    //     particlesGeometry.attributes.position.array[i3 + 1] = Math.sin(elapsedTime + positionX);
+    // }
 
-    particlesGeometry.attributes.position.needsUpdate = true;
+    // particlesGeometry.attributes.position.needsUpdate = true;
 
     camera.position.x = Math.cos(elapsedTime * 0.5) * (7 + Math.sin(elapsedTime * .32));
     camera.position.y = Math.cos(elapsedTime * 0.5) * (7 + Math.sin(elapsedTime * .32));
